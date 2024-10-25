@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prise de Service</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Enregistrement des Prises de Service</h1>
+  <form id="service-form">
+    <label for="name">Nom de la personne:</label>
+    <input type="text" id="name" required>
+
+    <label for="day">Jour:</label>
+    <select id="day" required>
+      <option value="Lundi">Lundi</option>
+      <option value="Mardi">Mardi</option>
+      <option value="Mercredi">Mercredi</option>
+      <option value="Jeudi">Jeudi</option>
+      <option value="Vendredi">Vendredi</option>
+      <option value="Samedi">Samedi</option>
+      <option value="Dimanche">Dimanche</option>
+    </select>
+
+    <label for="date">Date de la prise:</label>
+    <input type="date" id="date" required>
+
+    <label for="start-time">Heure de début:</label>
+    <input type="time" id="start-time" required>
+
+    <label for="end-time">Heure de fin:</label>
+    <input type="time" id="end-time" required>
+
+    <label for="comments">Autres mentions:</label>
+    <textarea id="comments"></textarea>
+
+    <button type="submit">Enregistrer la prise de service</button>
+  </form>
+
+  <div id="result"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
